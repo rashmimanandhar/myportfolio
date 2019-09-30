@@ -2,6 +2,10 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import KUDO from "./views/PortfolioKudo";
+import Concordia from "./views/PortfolioConcordia";
+import Manaram from "./views/PortfolioManaram";
+import Procit from "./views/PortfolioProcit";
+import Ent from "./views/PortfolioENT";
 
 Vue.use(Router);
 
@@ -18,6 +22,26 @@ export default new Router({
       path: "/portfolio/kudo",
       name: "kudo",
       component: KUDO
+    },
+    {
+      path: "/portfolio/concordia",
+      name: "concordia",
+      component: Concordia
+    },
+    {
+      path: "/portfolio/manaram",
+      name: "manaram",
+      component: Manaram
+    },
+    {
+      path: "/portfolio/ent",
+      name: "ent",
+      component: Ent
+    },
+    {
+      path: "/portfolio/procit",
+      name: "procit",
+      component: Procit
     },
     {
       path: "/about",

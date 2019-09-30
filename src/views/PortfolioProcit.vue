@@ -1,7 +1,7 @@
 <template>
-  <div class="home main-content">
+  <div class="four main-content">
     <div class="left-content slideUp">
-      <h1>KUDO</h1>
+      <h1>Procit</h1>
       <p class="subtxt">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue
         purus eget metus tincidunt, nec feugiat lorem cursus.
