@@ -153,12 +153,12 @@ button {
 }
 
 .fade-enter-active {
-  animation: slidePageIn 1s forwards;
-  animation-timing-function: cubic-bezier(0.8, -0.49, 0.36, 1);
+  animation: slidePageIn 0.5s forwards;
+  animation-timing-function: cubic-bezier(0.25, -0.49, 0.36, 1);
 }
 
 .fade-leave-active {
-  animation: slidePageDown 1s forwards;
+  animation: slidePageDown 0.5s forwards;
   animation-timing-function: cubic-bezier(0.8, -0.49, 0.36, 1);
 }
 
