@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="home main-content">
+    <div class="left-content">
+      <h1>6 YRS DEVELOPMENT</h1>
+      <p class="subtxt">
+        I have been a web developer for 6 yrs and work as a freelancer
+      </p>
+      <p class="subtxt">
+        I've worked with KUDO, Manaram Technology, ENT(JAPAN) & PROCIT
+      </p>
+    </div>
+    <div class="right-content img1">
+      <button>
+        <router-link to="/portfolio/one">Browse Work</router-link>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
+
+<style scoped>
+.img1 {
+  background: url("../assets/home.jpg");
+}
+</style>

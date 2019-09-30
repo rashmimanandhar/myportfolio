@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+$primary: #017faf;
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f7f7f7;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "iface";
+}
+
+a{
+  color: $primary;
+  text-decoration: none;
+
+}
+
+p{
+  line-height: 25px;
+}
