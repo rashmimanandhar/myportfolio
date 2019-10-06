@@ -13,8 +13,9 @@ module.exports = {
             "/",
             "/about",
             "/portfolio/kudo",
-            "portfolio/concordia",
-            "portfolio/manaram"
+            "/portfolio/concordia",
+            "/portfolio/manaram",
+            "/timeline"
           ],
           {}
         )
