@@ -46,6 +46,10 @@ p {
       height: 100%;
       min-height: 100%;
 
+      .hide{
+        display: none;
+      }
+
       nav {
         display: grid;
         grid-template-columns: 200px auto;

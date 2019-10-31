@@ -1,8 +1,8 @@
 <template>
-  <div class="timeline ">
+  <div class="timeline" v-on:scroll="onScroll">
     <!--   to create more timeline copy the code between these comments, remember to remove no-border class and info1 class
     -->
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl no-border"></section>
       <section class="tr no-border"></section>
       <div class="flex">
@@ -10,7 +10,7 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
     <section class="info no-border">
       <h2>Title</h2>
       <span
@@ -24,7 +24,7 @@
 
     <section></section>
     <section class="info">
-      <h2>Title</h2>
+      <h2>Title {{ lastScrollPosition }}</h2>
       <span
         >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus ea
         deserunt delectus ab nam? Exercitationem aspernatur, alias sed vero esse
@@ -32,7 +32,7 @@
         pariatur.</span
       >
     </section>
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -40,10 +40,10 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
     <!--   end of code to copy  -->
 
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -51,7 +51,7 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
     <section class="info">
       <h2>Title</h2>
       <span
@@ -73,7 +73,7 @@
         pariatur.</span
       >
     </section>
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -81,9 +81,9 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
 
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -91,7 +91,7 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
     <section class="info">
       <h2>Title</h2>
       <span
@@ -113,7 +113,7 @@
         pariatur.</span
       >
     </section>
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -121,9 +121,9 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
 
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -131,7 +131,7 @@
       </div>
       <section class="bl"></section>
       <section class="br"></section>
-    </div1>
+    </div>
     <section class="info">
       <h2>Title</h2>
       <span
@@ -153,7 +153,7 @@
         pariatur.</span
       >
     </section>
-    <div1 class="circle-container">
+    <div class="circle-container">
       <section class="tl"></section>
       <section class="tr"></section>
       <div class="flex">
@@ -161,7 +161,7 @@
       </div>
       <section class="bl no-border"></section>
       <section class="br no-border"></section>
-    </div1>
+    </div>
   </div>
 </template>
 <script>
@@ -170,31 +170,19 @@ export default {
     return {
       showNavBar: true,
       lastScrollPosition: 0
-    };
-  },
-  mounted() {
-    window.addEventListener("scroll", this.onScroll);
-  },
-
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.onScroll);
+    }
   },
   methods: {
-    onScroll() {
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScrollPosition < 0) {
-        return;
-      }
-
-      this.showNavBar = currentScrollPosition < this.lastScrollPosition;
-      this.$emit("showNavBar", this.showNavBar);
-
-      this.lastScrollPosition = currentScrollPosition;
+    onScroll: function(event) {
+      let post = event.target
+      console.log(post.scrollTop)
+      this.$store.dispatch('showNavBar', post.scrollTop < 20)
     }
+  },
+  destroyed() {
+    this.$store.dispatch('showNavBar', true)
   }
-};
+}
 </script>
 <style scoped lang="scss">
 $circle-color: #848b91;
@@ -288,10 +276,10 @@ $desc: #071108;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto 2.5em 2.5em auto;
   grid-template-areas:
-    "tl tl tr tr"
-    "cr cr cr cr"
-    "cr cr cr cr"
-    "bl bl br br";
+    'tl tl tr tr'
+    'cr cr cr cr'
+    'cr cr cr cr'
+    'bl bl br br';
 
   div {
     grid-area: cr;

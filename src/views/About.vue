@@ -9,15 +9,15 @@
       </button>
       <br />
       <div class="social-logo-container">
-        <router-link to="#"
+        <a href="https://github.com/himars3290" target="_blank"
           ><img class="social-logo" src="../assets/github-logo.svg"
-        /></router-link>
-        <router-link to="#"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/rashmi-manandhar"
           ><img class="social-logo" src="../assets/linkedin.svg"
-        /></router-link>
-        <router-link to="#"
+        /></a>
+        <a href="https://codepen.io/himars3290" target="_blank"
           ><img class="social-logo" src="../assets/codepen.png"
-        /></router-link>
+        /></a>
       </div>
     </div>
     <div class="right-content">
@@ -174,6 +174,4 @@ button {
   font-size: 1.5em;
   margin-top: 30px;
 }
-
-
 </style>
