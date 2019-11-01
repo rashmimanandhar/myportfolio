@@ -7,6 +7,14 @@ export default {
       type: Boolean,
       required: true
     },
+    top:{
+      type: Boolean,
+      default:false
+    },
+    bottom:{
+      type: Boolean,
+      default:false
+    },
     content: {
       type: Object,
       required: true

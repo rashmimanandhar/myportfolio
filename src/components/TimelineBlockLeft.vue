@@ -1,9 +1,9 @@
 <template>
-  <div class="timeline">
-    <AppTimelineCircle :border="this.border">
+  <div class="timelineBlock">
+    <AppTimelineCircle :position="'left'" :top="this.top" :bottom="this.bottom">
       {{ content.year }}
     </AppTimelineCircle>
-    <AppTimelineInfo :border="this.border">
+    <AppTimelineInfo :top="this.top">
       <template slot="title">
         {{ content.title }}
       </template>

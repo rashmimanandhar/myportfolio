@@ -1,5 +1,5 @@
 <template>
-  <div class="timeline">
+  <div class="timelineBlock">
     <section></section>
     <AppTimelineInfo :border="this.border">
       <template slot="title">
@@ -10,7 +10,7 @@
         {{ content.description }}
       </template>
     </AppTimelineInfo>
-    <AppTimelineCircle :border="this.border">
+    <AppTimelineCircle :border="this.border" :position="'right'"  :top="this.top" :bottom="this.bottom">
       {{ content.year }}
     </AppTimelineCircle>
   </div>

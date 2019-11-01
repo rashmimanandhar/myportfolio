@@ -1,5 +1,5 @@
 <template>
-  <section class="info" :class="{'no-border': !border}">
+  <section class="info" :class="{'no-border': top}">
     <h2 ><slot name="title"/></h2>
     <span ><slot name="description"/></span>
   </section>
@@ -8,9 +8,10 @@
 <script>
 export default {
   props: {
-    border: {
+    top: {
       type: Boolean,
-      required: true
+      required: false,
+      default:false
     },
   },
 }

@@ -5,12 +5,15 @@ $title: #364652;
 $desc: #071108;
 
 .timeline {
-  background: $bg;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
+  background: #eff1f5;
   padding: 100px 50px 15px 50px;
-  height: 87%;
   overflow-y: scroll;
+  height: 87%;
+
+  .timelineBlock {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
 
   section {
     min-height: 50px;
@@ -19,6 +22,8 @@ $desc: #071108;
   .info {
     background-clip: padding-box;
     border-top: 2px solid $line-color;
+    padding-right: 1em;
+    margin-bottom: 1em;
 
     h2 {
       color: $title;
@@ -33,7 +38,6 @@ $desc: #071108;
   }
 
   .info:nth-of-type(2n) {
-    padding-right: 2em;
     text-align: right;
 
     span {
@@ -44,7 +48,6 @@ $desc: #071108;
   }
 
   .info:nth-of-type(2n + 1) {
-    padding-left: 2em;
     text-align: left;
 
     span {
@@ -54,7 +57,7 @@ $desc: #071108;
     }
   }
 
-  .circle-container:nth-child(2n) {
+  .circle-container.right {
     .tl {
       grid-area: tl;
       border-top: 2px solid $line-color;
@@ -72,7 +75,7 @@ $desc: #071108;
     }
   }
 
-  .circle-container:nth-child(2n + 1) {
+  .circle-container.left {
     .tr {
       grid-area: tr;
       border-top: 2px solid $line-color;
@@ -161,4 +164,3 @@ $desc: #071108;
     padding-bottom: 1em;
   }
 }
-
