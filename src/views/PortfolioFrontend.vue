@@ -8,6 +8,7 @@
         '<p>This system allows you to create multilingual conferences. You have the ability to join in the meeting and listen to the meeting in the language you desire. <br> <br>I was in charge of maintaining the system and any issues related to design. </p>',
       image: 'session_console.png'
     }"
+    :nextPage="'/portfolio/doctusTravel'"
   />
 </template>
 

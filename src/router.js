@@ -2,10 +2,11 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import KUDO from "./views/PortfolioFrontend";
-import Concordia from "./views/PortfolioConcordia";
+import DoctusTravel from "./views/PortfolioDoctusTravel";
+import kudoAI from "./views/PortfolioKUDOAI";
+import productManager from './views/PortfolioProductManager'
+import HDC from "./views/PortfolioHDC";
 import Manaram from "./views/PortfolioManaram";
-import Procit from "./views/PortfolioProcit";
-import Ent from "./views/PortfolioENT";
 
 Vue.use(Router);
 
@@ -24,24 +25,29 @@ export default new Router({
       component: KUDO
     },
     {
-      path: "/portfolio/concordia",
-      name: "concordia",
-      component: Concordia
+      path: "/portfolio/doctusTravel",
+      name: "doctusTravel",
+      component: DoctusTravel
+    },
+    {
+      path: "/portfolio/kudoAI",
+      name: "kudoAI",
+      component: kudoAI
+    },
+    {
+      path: "/portfolio/productManager",
+      name: "productManager",
+      component: productManager
+    },
+    {
+      path: "/portfolio/hdc",
+      name: "hdc",
+      component: HDC
     },
     {
       path: "/portfolio/manaram",
       name: "manaram",
       component: Manaram
-    },
-    {
-      path: "/portfolio/ent",
-      name: "ent",
-      component: Ent
-    },
-    {
-      path: "/portfolio/procit",
-      name: "procit",
-      component: Procit
     },
     {
       path: "/about",

@@ -1,32 +1,29 @@
 <template>
   <PortfolioContent
-      :pageColor="'#5487a8'"
-      :imageColor="'#DFDFDF'"
-      :content="{
-      title: 'Web Developer',
+    :pageColor="'#ac892a'"
+    :imageColor="'#44ACA1'"
+    :content="{
+      title: 'LEAD FRONTEND DEVELOPER',
       description:
         '<p>This system allows you to create multilingual conferences. You have the ability to join in the meeting and listen to the meeting in the language you desire. <br> <br>I was in charge of maintaining the system and any issues related to design. </p>',
-      image: 'manaram.png'
+      image: 'kudo_ai_single.png'
     }"
-      :prevPage="'/portfolio/HDC'"
+    :nextPage="'/portfolio/productManager'"
+    :prevPage="'/portfolio/doctusTravel'"
   />
 </template>
 
 <script>
-  // @ is an alias to /src
+// @ is an alias to /src
 
-  import PortfolioContent from '../components/PortfolioContent'
+import PortfolioContent from '../components/PortfolioContent'
 
-  export default {
-    name: 'productManager',
-    components: {
-      PortfolioContent
-    }
+export default {
+  name: 'kudoAI',
+  components: {
+    PortfolioContent
   }
+}
 </script>
 
 <style scoped lang="scss"></style>
-
-
-
-

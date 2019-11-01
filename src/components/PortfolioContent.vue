@@ -1,9 +1,12 @@
 <template>
   <div class="home main-content">
     <div class="left-content slideUp">
+      <router-link :to="prevPage" v-if="prevPage">
+        <img src="../assets/arrow-up.svg" class="arrow arrow-up" alt="" />
+      </router-link>
       <h1 :style="h1StyleObj">{{ content.title }}</h1>
       <p class="subtxt" v-html="content.description"></p>
-      <router-link to="/portfolio/concordia">
+      <router-link :to="nextPage">
         <img src="../assets/arrow-down.svg" class="arrow arrow-down" alt="" />
       </router-link>
     </div>
@@ -27,9 +30,19 @@ export default {
     content: {
       type: Object,
       required: true
+    },
+    nextPage: {
+      type: String,
+      required: true,
+      default: '/portfolio/kudo'
+    },
+    prevPage: {
+      type: String,
+      required: false,
     }
   },
   data() {
+    console.log(this.pageColor);
     return {
       h1StyleObj: {
         color: this.pageColor + '!important'
