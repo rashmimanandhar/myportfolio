@@ -4,12 +4,12 @@
       {{ content.year }}
     </AppTimelineCircle>
     <AppTimelineInfo :top="this.top">
-      <template slot="title">
+      <template slot="title" >
         {{ content.title }}
       </template>
 
       <template slot="description">
-        {{ content.description }}
+        <p v-html="content.description"></p>
       </template>
     </AppTimelineInfo>
     <section></section>

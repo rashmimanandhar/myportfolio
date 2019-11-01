@@ -2,7 +2,7 @@
   <div class="about main-content">
     <div class="left-content">
       <h1>About me</h1>
-      <p class="subtxt">I design, code and learn</p>
+      <p class="subtxt">I lead, design, code and learn</p>
 
       <button>
         <router-link to="/timeline">My Journey</router-link>
@@ -22,22 +22,12 @@
     </div>
     <div class="right-content">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-        assumenda atque cumque enim esse excepturi fugiat ipsam laborum neque
-        ratione, sit sunt voluptatibus. Earum eos nulla perferendis quos sint,
-        voluptatibus.
+        For the last 3 years, I have been working in KUDO. I was hired as a QA engineer but then I moved to product manager for about 1.5 years.
+        I was a Web developer before i started with KUDO, so after 2 years of being involved in Product & QA, I shifted my focus in Frontend Development. Now I have been working as a Frontend Developer for about a year in KUDO.
       </p>
 
       <div class="skill-container ">
-        <h3>Expertise</h3>
-        <div class="skill">
-          <div class="label">
-            Angular
-          </div>
-          <div class="bg-100">
-            <div class="animation-95"></div>
-          </div>
-        </div>
+        <h3>Skills</h3>
         <div class="skill">
           <div class="label">
             Vue
@@ -48,10 +38,26 @@
         </div>
         <div class="skill">
           <div class="label">
-            CodeIgniter
+            React
           </div>
           <div class="bg-100">
             <div class="animation-75"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="label">
+            Angular
+          </div>
+          <div class="bg-100">
+            <div class="animation-70"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="label">
+            CodeIgniter
+          </div>
+          <div class="bg-100">
+            <div class="animation-60"></div>
           </div>
         </div>
         <div class="skill">

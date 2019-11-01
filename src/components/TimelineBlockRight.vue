@@ -7,7 +7,7 @@
       </template>
 
       <template slot="description">
-        {{ content.description }}
+        <p v-html="content.description"></p>
       </template>
     </AppTimelineInfo>
     <AppTimelineCircle :border="this.border" :position="'right'"  :top="this.top" :bottom="this.bottom">

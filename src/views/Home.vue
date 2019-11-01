@@ -1,12 +1,12 @@
 <template>
   <div class="home main-content">
     <div class="left-content">
-      <h1>6 YRS DEVELOPMENT</h1>
+      <h3>6 YRS DEVELOPMENT & PRODUCT MANAGEMENT</h3>
       <p class="subtxt">
-        I have been a web developer for 6 yrs and work as a freelancer
+        I am curious by nature and try to learn about new technologies and how to effectively use them in my work.
       </p>
       <p class="subtxt">
-        I've worked with KUDO, Manaram Technology, ENT(JAPAN) & PROCIT
+        I recently completed my Masters in Applied Computer Science from Concordia University, Montreal
       </p>
     </div>
     <div class="right-content img1">
