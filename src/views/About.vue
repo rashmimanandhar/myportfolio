@@ -23,57 +23,18 @@
     <div class="right-content">
       <p>
         For the last 3 years, I have been working in KUDO. I was hired as a QA engineer but then I moved to product manager for about 1.5 years.
-        I was a Web developer before i started with KUDO, so after 2 years of being involved in Product & QA, I shifted my focus in Frontend Development. Now I have been working as a Frontend Developer for about a year in KUDO.
+        I was a Web developer before i started with KUDO, so after 2 years of being involved in Product & QA, I shifted my focus in Frontend Development. Now I have been working as a Frontend Developer for about a year.
       </p>
 
       <div class="skill-container ">
         <h3>Skills</h3>
-        <div class="skill">
+        <SkillSet :skill="'Vue'" :animation="'animation-80'"></SkillSet>
+        <div class="skill" v-for="(percentage, skill) in skills" :key="skill">
           <div class="label">
-            Vue
+            {{skill}}
           </div>
           <div class="bg-100">
-            <div class="animation-80"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="label">
-            React
-          </div>
-          <div class="bg-100">
-            <div class="animation-75"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="label">
-            Angular
-          </div>
-          <div class="bg-100">
-            <div class="animation-70"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="label">
-            CodeIgniter
-          </div>
-          <div class="bg-100">
-            <div class="animation-60"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="label">
-            Python
-          </div>
-          <div class="bg-100">
-            <div class="animation-60"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="label">
-            Java
-          </div>
-          <div class="bg-100">
-            <div class="animation-70"></div>
+            <div :class="getAnimationClass(percentage)"></div>
           </div>
         </div>
       </div>
@@ -181,3 +142,25 @@ button {
   margin-top: 30px;
 }
 </style>
+<script>
+  export default {
+    data() {
+      return {
+        skills: {
+          'Vue': 80,
+          'React': 75,
+          'Angular': 70,
+          'CodeIgniter': 55,
+          'Python': 50,
+          'Java': 70,
+          'Product Management' : 85
+        }
+      }
+    },
+    methods: {
+      getAnimationClass(percentage){
+        return 'animation-'+percentage;
+      }
+    }
+  }
+</script>

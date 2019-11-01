@@ -25,7 +25,16 @@
         year: '2018',
         title: 'Product Manager',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue purus eget metus tincidunt, nec feugiat lorem cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tristique, leo ut ornare efficitur, sapien ipsum consectetur velit, a interdum felis diam vitae ligula. Fusce in rutrum mi. Donec fringilla leo et tellus molestie, ut ultrices libero pharetra. Quisque et risus a lectus laoreet fermentum vitae et nunc. Nulla at odio quis enim viverra pulvinar. Nulla facilisi. Sed sit amet lectus at justo elementum varius eu quis orci. Vivamus lacinia nibh ac hendrerit consequat. Proin imperdiet magna mi, nec tincidunt nulla eleifend non. Ut at pretium elit.'
+          '<ul>' +
+          '<li> Lead the project and guide team members to achieve high end product.</li>' +
+          '<li> Communicate with clients regarding the features</li>' +
+          '<li> Assist in the collection and documentation of user\'s requirements, development of user stories,estimates and work plans.</li>' +
+          '<li> Creating mock-ups for client & designers</li>' +
+          '<li> Creating a documentation for developers and designers regarding the requirements of the features</li>' +
+          '<li> Working with QA to create documentation for test cases</li>' +
+          '<li> Communicating between developers, designers and clients to make a quality product</li>' +
+          '<li> Test the product to solve any issues before delivering it to client</li>' +
+          '</ul>'
       }"
     />
     <TimelineBlockLeft

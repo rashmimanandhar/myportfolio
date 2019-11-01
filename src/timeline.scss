@@ -34,6 +34,12 @@ $desc: #071108;
 
     span {
       color: $desc;
+      font-size: 0.8rem;
+      max-width: 50%;
+      display: inline-block;
+    }
+    ul {
+      text-align: left;
     }
   }
 
@@ -41,8 +47,6 @@ $desc: #071108;
     text-align: right;
 
     span {
-      max-width: 50%;
-      display: inline-block;
       animation: slideInRight 1.5s forwards 0s ease-in-out;
     }
   }
@@ -51,8 +55,6 @@ $desc: #071108;
     text-align: left;
 
     span {
-      max-width: 50%;
-      display: inline-block;
       animation: slideInLeft 1.5s forwards 0s ease-in-out;
     }
   }

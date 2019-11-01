@@ -19,18 +19,19 @@
       margin-bottom: 1px;
       opacity: 0.7; }
     .timeline .info span {
-      color: #071108; }
+      color: #071108;
+      font-size: 0.8rem;
+      max-width: 50%;
+      display: inline-block; }
+    .timeline .info ul {
+      text-align: left; }
   .timeline .info:nth-of-type(2n) {
     text-align: right; }
     .timeline .info:nth-of-type(2n) span {
-      max-width: 50%;
-      display: inline-block;
       animation: slideInRight 1.5s forwards 0s ease-in-out; }
   .timeline .info:nth-of-type(2n + 1) {
     text-align: left; }
     .timeline .info:nth-of-type(2n + 1) span {
-      max-width: 50%;
-      display: inline-block;
       animation: slideInLeft 1.5s forwards 0s ease-in-out; }
   .timeline .circle-container.right .tl {
     grid-area: tl;
